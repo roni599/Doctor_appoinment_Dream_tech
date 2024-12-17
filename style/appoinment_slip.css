@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.appointment-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+.section-title {
+    background-color: #d9d9d9;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+.btn-pay-now {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.table thead {
+    background-color: #f2f2f2;
+}
+
+hr {
+    border-top: 1px dashed #888;
+}
+
+.status-pending {
+    color: red;
+    font-weight: bold;
+}
+
+.appoinment-slip-main {
+    background-color: #f1f1f1;
+}
+
+.design {
+    width: 100%;
+    height: 2vh;
+    background-color: #004aac;
+}
+
+.table_size {
+    overflow: auto;
+    width: 100%;
+}

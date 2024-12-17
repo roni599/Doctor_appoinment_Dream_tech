@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.custom-navbar {
+    background-color: #8b52ff;
+    color: white;
+    padding: 0px 100px;
+}
+
+.custom-navbar .nav-link {
+    color: white;
+}
+
+.custom-navbar .nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand img {
+    height: auto;
+    width: 50px;
+}
+
+.custom-toggler {
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.list_free_image {
+    margin-top: 1rem;
+}
+
+.hospitalist {
+    background-color: #f51b98;
+    border-radius: 25px;
+}
+
+.plus_logo {
+    margin-top: -15px;
+}
+
+.doctor_text_color_header {
+    color: #02be63;
+}
+
+.here_have_text_color {
+    color: #084fae
+}
+
+.button_background_color {
+    background-color: #02be63;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.free_campain {
+    background-image: linear-gradient(to right, #8b5cf6, #3bc6e9);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.search_doctor {
+    background-color: #e6e6e6;
+}
+.footer {
+    background-color: #f50992;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.social-icons a .youtube {
+    color: #ff4848;
+}
+
+.social-icons a .whatsapp {
+    color: #7db445;
+}
+
+.social-icons a .telegram {
+    color: #3bacde;
+}
+
+.social-icons a .facebook {
+    color: #214c8b;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    .custom-navbar .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .custom-navbar {
+        padding: 0px 0px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}
+
+.custom-width {
+    width: 13rem;
+}
+
+.doctor_text_color {
+    background-color: #b4cff4;
+    color: black
+}
+
+.search_button_background_color {
+    background-color: #5f68b4;
+}
+
+.doctore_search_row {
+    background-color: #f6f6f7;
+}
+
+.doctor_profile {
+    font-size: 12px;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-width {
+        width: 18rem;
+    }
+}

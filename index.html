@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealingBD</title>
+    <link rel="shortcut icon" href="./images/doctor_appoinment_logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand bg-white d-flex align-items-center" href="#">
+                    <img src="./images/doctor_appoinment_logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Hospital</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Doctor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Symptoms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pathology</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Medicine</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Primacy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ambulance</a></li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#">Hospital</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="row align-items-center py-3 mx-5">
+                <div class="col-md-3 text-center text-md-start">
+                    <h5>সহেজই প্রোফাইল তৈরি করুন</h5>
+                    <div class="list_free_image d-flex justify-content-center justify-content-md-start">
+                        <div class="list">
+                            <ul>
+                                <li>হসিপটাল</li>
+                                <li>ডাক্তার</li>
+                                <li>নার্স</li>
+                                <li>রোগী/জনােরল</li>
+                            </ul>
+                        </div>
+                        <div class="free">
+                            <img src="./images/free.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center  mb-2 mb-md-0">
+                    <div class="card hospitalist custom-width" style="height: 5rem;">
+                        <div class="card-body">
+                            <div class="plus_log_quantity d-flex justify-content-center align-items-center">
+                                <div class="plus_logo">
+                                    <img src="./images/plus-Photoroom.png" alt="">
+                                </div>
+                                <div class="quantity text-white ms-3">
+                                    <p class="text-center">Hospitalist <br> 412</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center  mb-2 mb-md-0">
+                    <div class="card hospitalist custom-width" style="height: 5rem;">
+                        <div class="card-body">
+                            <div class="plus_log_quantity d-flex justify-content-center align-items-center">
+                                <div class="plus_logo">
+                                    <img src="./images/microcifs-Photoroom.png" alt="">
+                                </div>
+                                <div class="quantity text-white ms-3">
+                                    <p class="text-center">Doctor<br>4875</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center  mb-2 mb-md-0">
+                    <div class="card hospitalist custom-width" style="height: 5rem;">
+                        <div class="card-body">
+                            <div class="plus_log_quantity d-flex justify-content-center align-items-center">
+                                <div class="plus_logo">
+                                    <img src="./images/heart-removebg-preview.png" alt="">
+                                </div>
+                                <div class="quantity text-white ms-3">
+                                    <p class="text-center">Patient<br>12545</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center text-md-end">
+                    <h2 class="doctor_text_color_header fw-bold">ডাক্তার খুঁজছেন?</h2>
+                    <h5 class="here_have_text_color">এখানে আছ...</h5>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row  py-1 mx-5">
+                <div class="col-md-3 search_doctor mb-3">
+                    <div class="row mb-3">
+                        <p class="doctor_text_color text-center p-1">Doctor</p>
+                        <div class="seler_tag mb-2">
+                            <label for="symptoms">Symptoms</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="specialist mb-2">
+                            <label for="specialist">Specialist</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="gender_experiance mb-2">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Gender</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Experience</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="divison_district mb-2">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Division</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>District</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialist mb-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Sub District</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="specialist mb-3">
+                            <label for="specialist">Hospital</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="searchbutton text-center mb-3">
+                            <button
+                                class="btn btn-sm text-white fw-bold w-25 search_button_background_color">Search...</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="doctor_text_color text-center p-1">Pathology</p>
+                        <div class="seler_tag mb-2">
+                            <label for="symptoms">Symptoms</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="divison_district mb-2">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Division</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>District</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialist mb-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Sub District</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="specialist mb-3">
+                            <label for="specialist">Hospital</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="searchbutton text-center mb-3">
+                            <button
+                                class="btn btn-sm text-white fw-bold w-25 search_button_background_color">Search...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                                class="rounded-circle mb-2" width="150px" height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                                class="rounded-circle mb-2" width="150px" height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="https://media.istockphoto.com/id/1372002650/photo/cropped-portrait-of-an-attractive-young-female-doctor-standing-with-her-arms-folded-in-the.jpg?b=1&s=612x612&w=0&k=20&c=kXQ3AGqu4GK0Gj87ORo-yBA2RNLaxQyiLPqzfQQqyG0="
+                                                class="rounded-circle mb-2" width="150px" height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                                class="rounded-circle mb-2" width="150px" height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="https://images.pexels.com/photos/5214995/pexels-photo-5214995.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                                class="rounded-circle mb-2" width="150px" height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="https://images.pexels.com/photos/5327864/pexels-photo-5327864.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                                class="rounded-circle mb-2" width="150px" height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- free campain -->
+                    <div class="row py-3 mx-0 free_campain text-center align-items-center mb-3">
+                        <div class="col-md-3">
+                            <h1 class="text-white">ফ্রি</h1>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="mb-0 text-white">বুকিং চলেছ</h5>
+                            <p class="text-white">Noya polton Dhaka</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="mb-0">Date Time</h5>
+                            <p class="text-white mb-0">12/12/2024</p>
+                            <p class="mb-2 text-white"> 10:30am - 05:30pm</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="ibnsinapicture text-center mb-0">
+                                <img src="./images/ibnsina.png" width="40px" height="40px" alt="">
+                            </div>
+                            <h4 class="text-center">Ibn Sina Hospital </h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                                class="rounded-circle mb-2" width="150px" height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="https://images.pexels.com/photos/4769130/pexels-photo-4769130.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                                class="rounded-circle mb-2" width="150px" height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="https://images.pexels.com/photos/5452198/pexels-photo-5452198.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                                class="rounded-circle mb-2" width="150px" height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- free campain  -->
+                    <div class="row py-3 mx-1 free_campain text-center align-items-center mb-3">
+                        <div class="col-md-3">
+                            <h1 class="text-white">Free</h1>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="mb-0 text-white">বুকিং চলেছ</h5>
+                            <p class="text-white">Noya polton Dhaka</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="mb-0">Date Time</h5>
+                            <p class="text-white mb-0">12/12/2024</p>
+                            <p class="mb-2 text-white"> 10:30am - 05:30pm</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="ibnsinapicture text-center mb-0">
+                                <img src="./images/ibnsina.png" width="40px" height="40px" alt="">
+                            </div>
+                            <h4 class="text-center">Ibn Sina Hospital </h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body doctore_search_row">
+                                    <div
+                                        class="doctor_details d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="doctor_image_andothers text-center mb-3 mb-md-0">
+                                            <img src="./images/ekRoni.png" class="rounded-circle mb-2" width="150px"
+                                                height="150px" alt="">
+                                            <p class="text-center mb-0">Reg.No 2132134</p>
+                                        </div>
+                                        <div class="doctor_profile text-center text-md-start text-justify">
+                                            <h5 class="mb-0">Dr. Md. Ebrahim Khalil</h5>
+                                            <p class="mb-0">MBBS DMU FCPS MS</p>
+                                            <p class="mb-0">WHO Clinical Polw On Child Urologist (India)</p>
+                                            <p class="mb-0">Polw On Child Urologist (USA)</p>
+                                            <p class="fw-bold mb-0">Specialist</p>
+                                            <p class="mb-0">Child, BabyCare, Urologists, Medicine</p>
+                                            <p class="mb-0">Hfdngf, Reaset</p>
+                                            <p class="fw-bold mb-0">Proposer</p>
+                                            <p class="mb-0">Department of Child Surgery</p>
+                                            <p class="mb-0">Sohid Sorowerdy Medical College</p>
+                                            <p class="mb-0">01984-994406</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="doctorview_appoinment d-flex flex-column flex-md-row justify-content-between align-items-center mt-3">
+                                        <div class="doctor_view mb-2 mb-md-0 ms-md-3">
+                                            <button class="btn btn-sm btn-info text-white rounded-pill">Doctor
+                                                View</button>
+                                        </div>
+                                        <div class="appoinment">
+                                            <button
+                                                class="btn btn-sm btn-info text-white button_background_color rounded-pill">Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center py-0">
+            <!-- Download Links -->
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-3">
+                <a href="#" class="mb-2 mb-md-0 me-md-2">
+                    <img src="./images/windows_download.png" alt="Download for Windows" width="100px">
+                </a>
+                <a href="#" class="mb-2 mb-md-0 me-md-2">
+                    <img src="./images/googleplay.png" alt="Google Play" width="100px">
+                </a>
+                <a href="#">
+                    <img src="./images/app_store.png" alt="App Store" width="100px">
+                </a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram telegram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp whatsapp"></i></a>
+                <a href="#"><i class="fab fa-youtube youtube"></i></a>
+            </div>
+            <!-- Footer Link -->
+            <div class="footer">
+                <span>www.healingbd.com</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
